@@ -22,7 +22,9 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "deploy": "gh-pages -d docs/.vitepress/dist",
-    "lint": "eslint . --ext ts,tsx"
+    "lint": "eslint . --ext ts,tsx",
+    "release:alpha": "npm publish --tag alpha",
+    "release": "npm publish"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",
