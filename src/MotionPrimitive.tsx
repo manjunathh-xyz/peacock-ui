@@ -10,7 +10,8 @@ export interface MotionPrimitiveProps extends HTMLMotionProps<'div'> {
 
 export const MotionPrimitive = React.forwardRef<HTMLDivElement, MotionPrimitiveProps>(
   ({ as: Component = 'div', className, ...props }, ref) => {
-    const MotionComponent = motion[Component as keyof typeof motion] || motion.div;
+    // Cast to any to avoid "excessively deep" type errors with the motion proxy
+    const MotionComponent = (motion as any)[Component] || motion.div;
 
     return (
       <MotionComponent

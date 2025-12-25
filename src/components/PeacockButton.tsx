@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useRef, useState } from 'react';
-import { motion, useMotionValue, useSpring, HTMLMotionProps } from 'framer-motion';
+import React from 'react';
+import { motion, HTMLMotionProps } from 'framer-motion';
 import { cn } from '../hooks/utils';
+import { useSpotlight } from '../hooks/useSpotlight';
 
 export interface PeacockButtonProps extends HTMLMotionProps<'button'> {
   variant?: 'primary' | 'outline' | 'glass';
@@ -11,17 +12,10 @@ export interface PeacockButtonProps extends HTMLMotionProps<'button'> {
 
 export const PeacockButton = React.forwardRef<HTMLButtonElement, PeacockButtonProps>(
   ({ className, variant = 'primary', glowSize = 150, children, onMouseMove, ...props }, ref) => {
-    const mouseX = useMotionValue(0);
-    const mouseY = useMotionValue(0);
-
-    const springConfig = { damping: 25, stiffness: 300 };
-    const springX = useSpring(mouseX, springConfig);
-    const springY = useSpring(mouseY, springConfig);
+    const { x, y, onMouseMove: handleSpotlightMove } = useSpotlight();
 
     function handleMouseMove(e: React.MouseEvent<HTMLButtonElement>) {
-      const rect = e.currentTarget.getBoundingClientRect();
-      mouseX.set(e.clientX - rect.left);
-      mouseY.set(e.clientY - rect.top);
+      handleSpotlightMove(e);
       onMouseMove?.(e);
     }
 
@@ -46,7 +40,7 @@ export const PeacockButton = React.forwardRef<HTMLButtonElement, PeacockButtonPr
         <motion.div
           className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           style={{
-            background: `radial-gradient(${glowSize}px circle at ${springX}px ${springY}px, rgba(255, 255, 255, 0.15), transparent)`,
+            background: `radial-gradient(${glowSize}px circle at ${x}px ${y}px, rgba(255, 255, 255, 0.15), transparent)`,
           }}
         />
 

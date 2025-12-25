@@ -8,5 +8,6 @@ export * from './components/PeacockInput';
 export * from './components/PeacockSwitch';
 export * from './components/PeacockBadge';
 export * from './components/PeacockTooltip';
+export * from './components/PeacockDialog';
 export * from './hooks/utils';
 import './themes/globals.css';

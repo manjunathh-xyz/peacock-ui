@@ -35,7 +35,8 @@ export default defineConfig({
           { text: 'Fluid Card', link: '/components/card' },
           { text: 'Glass Menu', link: '/components/menu' },
           { text: 'Badge', link: '/components/badge' },
-          { text: 'Tooltip', link: '/components/tooltip' }
+          { text: 'Tooltip', link: '/components/tooltip' },
+          { text: 'Dialog', link: '/components/dialog' }
         ]
       }
     ],

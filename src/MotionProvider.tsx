@@ -20,8 +20,8 @@ const defaultPhysics = {
 
 const MotionContext = createContext(defaultPhysics);
 
-export const MotionProvider = ({ children, physics = defaultPhysics }: MotionProviderProps) => {
-  const value = useMemo(() => physics, [physics]);
+export const MotionProvider = ({ children, physics }: MotionProviderProps) => {
+  const value = useMemo(() => ({ ...defaultPhysics, ...physics }), [physics]);
 
   return (
     <MotionContext.Provider value={value}>

@@ -36,10 +36,10 @@ export const transitions = {
     type: "spring",
     stiffness: 300,
     damping: 20
-  },
+  } as const,
   smooth: {
     type: "tween",
     ease: [0.22, 1, 0.36, 1],
     duration: 0.3
-  }
+  } as const
 };
