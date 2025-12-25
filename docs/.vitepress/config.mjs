@@ -27,6 +27,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Quantum Components',
+        items: [
+          { text: 'Holographic Card', link: '/components/holographic-card' },
+          { text: 'Dock', link: '/components/dock' }
+        ]
+      },
+      {
         text: 'Components',
         items: [
           { text: 'Button', link: '/components/button' },
@@ -36,7 +43,11 @@ export default defineConfig({
           { text: 'Glass Menu', link: '/components/menu' },
           { text: 'Badge', link: '/components/badge' },
           { text: 'Tooltip', link: '/components/tooltip' },
-          { text: 'Dialog', link: '/components/dialog' }
+          { text: 'Dialog', link: '/components/dialog' },
+          { text: 'Command Palette', link: '/components/command' },
+          { text: 'Toast', link: '/components/toast' },
+          { text: 'Skeleton', link: '/components/skeleton' },
+          { text: 'Code Block', link: '/components/code' }
         ]
       }
     ],

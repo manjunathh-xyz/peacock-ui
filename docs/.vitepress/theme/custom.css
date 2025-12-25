@@ -1,24 +1,84 @@
 :root {
   --vp-c-brand-1: #5865F2;
   --vp-c-brand-2: #4752C4;
-  --vp-c-brand-3: #3B44B0;
+  --vp-c-brand-3: #404EED;
   --vp-c-brand-soft: rgba(88, 101, 242, 0.14);
+
+  --vp-c-bg: #0f0f12;
+  --vp-c-bg-alt: #16161a;
+  --vp-c-bg-soft: #1c1c21;
+
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #b5bac1;
+  --vp-c-text-3: #949BA4;
+
+  --vp-c-border: rgba(255, 255, 255, 0.1);
+  --vp-c-divider: rgba(255, 255, 255, 0.1);
+
+  --vp-font-family-base: 'Inter', 'Geist', sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', monospace;
 }
 
 .dark {
-  --vp-c-bg: #050505;
-  --vp-c-bg-soft: #0a0a0c;
-  --vp-c-bg-mute: #0f0f11;
-  --vp-c-border: rgba(255, 255, 255, 0.05);
+  --vp-c-bg: #0f0f12;
 }
 
-/* Custom styles for Peacock UI in VitePress */
-.vp-doc h1 {
-  letter-spacing: -0.04em;
-  font-weight: 900;
+/* Glassmorphism Sidebar */
+.VPNav, .VPSidebar {
+  background-color: rgba(15, 15, 18, 0.7) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.vp-doc h2 {
-  letter-spacing: -0.02em;
-  font-weight: 800;
+/* Card Styling */
+.VPFeature {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 16px !important;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.VPFeature:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  transform: translateY(-2px);
+}
+
+/* Code Blocks */
+.vp-doc div[class*='language-'] {
+  background-color: #050505 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+/* Custom Hero Button */
+.VPButton.brand {
+  background-color: var(--vp-c-brand-1) !important;
+  border-radius: 12px !important;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.VPButton.brand:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(88, 101, 242, 0.4);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }

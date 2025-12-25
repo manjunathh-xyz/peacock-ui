@@ -1,4 +1,5 @@
 import React, { createContext, useContext, ReactNode } from 'react';
+import { PeacockScene } from './canvas/PeacockScene';
 
 interface PeacockContextProps {
   theme: 'light' | 'dark';
@@ -16,8 +17,11 @@ export const PeacockProvider = ({
   return (
     <PeacockContext.Provider value={{ theme }}>
       <div className={theme === 'dark' ? 'dark' : ''}>
-        <div className="min-h-screen bg-white dark:bg-peacock-darker text-slate-900 dark:text-slate-100 selection:bg-peacock-primary/30">
-          {children}
+        <div className="min-h-screen bg-white dark:bg-peacock-darker text-slate-900 dark:text-slate-100 selection:bg-peacock-primary/30 relative">
+          <PeacockScene />
+          <div className="relative z-10">
+            {children}
+          </div>
         </div>
       </div>
     </PeacockContext.Provider>
