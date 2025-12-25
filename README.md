@@ -43,13 +43,41 @@ function App() {
 }
 ```
 
-## 🧱 Core Components
+## 🧱 Component Reference
 
-- **PeacockButton**: Follow-mouse radial light source effect.
-- **FluidCard**: Seamless layout transitions using shared element logic.
-- **GlassMenu**: Recursive command-palette style menu.
-- **PeacockInput**: Interactive focus-glow borders.
-- **PeacockSwitch**: Physics-based toggle interactions.
+### `PeacockButton`
+Interactive light-source button with physics-based haptics.
+```tsx
+<PeacockButton variant="primary" glowSize={200}>
+  Spread Plumage
+</PeacockButton>
+```
+**Props:** `variant` ('primary'|'outline'|'glass'), `glowSize` (number)
+
+### `PeacockInput`
+Focus-reactive input with dynamic glow borders.
+```tsx
+<PeacockInput label="Email" placeholder="you@example.com" error="Required" />
+```
+**Props:** `label` (string), `error` (string), `icon` (ReactNode)
+
+### `FluidCard`
+Expandable surface with shared-element layout transitions.
+```tsx
+<FluidCard title="Physics" description="Hover for details" expandedContent={<p>Details...</p>} />
+```
+
+### `PeacockSwitch`
+Spring-loaded toggle interaction.
+```tsx
+<PeacockSwitch checked={true} onChange={(val) => {}} label="Motion Enabled" />
+```
+
+### `GlassMenu`
+Command-palette style recursive menu.
+```tsx
+<GlassMenu isOpen={isOpen} onClose={close} items={[{ id: '1', label: 'Home' }]} />
+```
 
 ## 🛠️ Development
 
