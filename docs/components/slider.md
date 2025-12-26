@@ -4,9 +4,9 @@ A physics-backed slider with a glowing "neon" thumb.
 
 ## Preview
 
-<ComponentPreview>
+
   <SliderDemo />
-</ComponentPreview>
+
 
 ## Usage
 

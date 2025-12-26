@@ -4,9 +4,9 @@ A fast, composable, unstyled command menu for React, powered by `cmdk`.
 
 ## Preview
 
-<ComponentPreview>
+
   <CommandDemo />
-</ComponentPreview>
+
 
 ## Usage
 

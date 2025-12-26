@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GlassMenu, PeacockButton } from '../../src';
+import { ComponentPreview } from './ComponentPreview';
 
 export const MenuDemo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,18 +13,20 @@ export const MenuDemo = () => {
   ];
 
   return (
-    <div className="h-64 flex items-center justify-center relative overflow-hidden">
-      <div className="absolute top-8">
-        <PeacockButton onClick={() => setIsOpen(true)}>
-          Open Menu
-        </PeacockButton>
+    <ComponentPreview>
+      <div className="h-64 flex items-center justify-center relative overflow-hidden">
+        <div className="absolute top-8">
+          <PeacockButton onClick={() => setIsOpen(true)}>
+            Open Menu
+          </PeacockButton>
+        </div>
+        
+        <GlassMenu 
+          isOpen={isOpen} 
+          onClose={() => setIsOpen(false)} 
+          items={items}
+        />
       </div>
-      
-      <GlassMenu 
-        isOpen={isOpen} 
-        onClose={() => setIsOpen(false)} 
-        items={items}
-      />
-    </div>
+    </ComponentPreview>
   );
 };

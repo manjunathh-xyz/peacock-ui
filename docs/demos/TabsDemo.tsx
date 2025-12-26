@@ -5,7 +5,6 @@ import { ComponentPreview } from './ComponentPreview';
 
 export const TabsDemo = () => {
   const items = [
-    // ... items
     {
       id: 'profile',
       label: 'Profile',

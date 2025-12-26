@@ -4,9 +4,9 @@ A Command-K style interface with deep glassmorphism and backdrop filtering.
 
 ## Preview
 
-<ComponentPreview>
+
   <MenuDemo />
-</ComponentPreview>
+
 
 ## Usage
 

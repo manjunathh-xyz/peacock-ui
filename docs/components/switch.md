@@ -4,9 +4,9 @@ A spring-loaded toggle interaction.
 
 ## Preview
 
-<ComponentPreview>
+
   <SwitchDemo />
-</ComponentPreview>
+
 
 ## Usage
 

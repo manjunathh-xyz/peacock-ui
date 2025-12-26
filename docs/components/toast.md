@@ -4,9 +4,9 @@ An opinionated toast component for React, powered by `sonner`.
 
 ## Preview
 
-<ComponentPreview>
+
   <ToastDemo />
-</ComponentPreview>
+
 
 ## Usage
 

@@ -4,9 +4,9 @@ A floating informational box that appears when hovering over an element.
 
 ## Preview
 
-<ComponentPreview>
+
   <TooltipDemo />
-</ComponentPreview>
+
 
 ## Usage
 

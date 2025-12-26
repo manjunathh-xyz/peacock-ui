@@ -1,23 +1,26 @@
 import React from 'react';
 import { FluidCard } from '../../src';
+import { ComponentPreview } from './ComponentPreview';
 
 export const FluidCardDemo = () => {
   return (
-    <div className="flex items-center justify-center w-full max-w-sm">
-      <FluidCard
-        title="Architecture"
-        description="Deep dive into our motion system. Click to expand."
-        expandedContent={
-          <div className="space-y-4 pt-4 text-slate-300">
-            <p>Learn how we use spring physics to create natural-feeling interactions.</p>
-            <ul className="list-disc pl-4">
-              <li>Spring physics basics</li>
-              <li>Layout transitions</li>
-              <li>Gesture recognition</li>
-            </ul>
-          </div>
-        }
-      />
-    </div>
+    <ComponentPreview>
+      <div className="flex items-center justify-center w-full max-w-sm">
+        <FluidCard
+          title="Architecture"
+          description="Deep dive into our motion system. Click to expand."
+          expandedContent={
+            <div className="space-y-4 pt-4 text-slate-300">
+              <p>Learn how we use spring physics to create natural-feeling interactions.</p>
+              <ul className="list-disc pl-4">
+                <li>Spring physics basics</li>
+                <li>Layout transitions</li>
+                <li>Gesture recognition</li>
+              </ul>
+            </div>
+          }
+        />
+      </div>
+    </ComponentPreview>
   );
 };

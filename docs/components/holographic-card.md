@@ -4,9 +4,9 @@ A 3D-tilt enabled card that tracks mouse movement to create a realistic holograp
 
 ## Preview
 
-<ComponentPreview>
+
   <HolographicCardDemo />
-</ComponentPreview>
+
 
 ## Usage
 

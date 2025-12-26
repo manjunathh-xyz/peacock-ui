@@ -4,9 +4,9 @@ The `FluidCard` is a layout primitive that supports layout animations and expand
 
 ## Preview
 
-<ComponentPreview>
+
   <FluidCardDemo />
-</ComponentPreview>
+
 
 ## Usage
 
