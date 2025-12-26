@@ -82,3 +82,66 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* Advanced Quantum Effects */
+.quantum-glow {
+  position: absolute;
+  filter: blur(120px);
+  z-index: -1;
+  opacity: 0.2;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.VPHome {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHome::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 400px;
+  height: 400px;
+  background: #5865F2;
+  filter: blur(150px);
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.VPHome::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  width: 500px;
+  height: 500px;
+  background: #f43f5e;
+  filter: blur(180px);
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Typography Enhancements */
+.VPHomeHero .name {
+  letter-spacing: -0.04em;
+  font-weight: 900 !important;
+}
+
+.VPHomeHero .text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+.VPHomeHero .tagline {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.25rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
