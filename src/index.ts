@@ -12,6 +12,7 @@ export * from './components/PeacockSwitch';
 export * from './components/PeacockBadge';
 export * from './components/PeacockTooltip';
 export * from './components/PeacockDialog';
+export * from './components/PeacockTabs';
 
 // v3 Components
 export * from './components/HolographicCard';

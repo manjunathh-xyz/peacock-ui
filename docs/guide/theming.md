@@ -35,6 +35,14 @@ export default {
 
 - `.noise-texture`: Adds a subtle svg noise overlay to any element. This is crucial for the "high-fidelity" tactile feel.
 
+### Perspective System
+
+Added in v3.0.0-alpha.2 to support 3D holographic effects:
+
+- `.perspective-none`: `perspective: none`
+- `.perspective-500`: `perspective: 500px`
+- `.perspective-1000`: `perspective: 1000px`
+
 ### Glows
 
 - `.text-glow`: Adds a text-shadow matching the primary color.
