@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0-alpha.3] - 2025-12-26
+
+### Added
+- Added \`layoutId\` prop to **PeacockTabs** to allow scoped shared-layout animations.
+- Added \`CommandSeparator\` export to **PeacockCommand**.
+
+### Fixed
+- Fixed motion conflicts when multiple **PeacockTabs** instances are present on the same page.
+- Improved React-Vue bridge stability for complex dashboard layouts.
+
 ## [3.0.0-alpha.2] - 2025-12-26
 
 ### Added
