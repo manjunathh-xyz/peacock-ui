@@ -1,6 +1,6 @@
 {
   "name": "@peacock-ui/core",
-  "version": "3.0.0-alpha.3",
+  "version": "3.0.0-alpha.4",
   "type": "module",
   "files": [
     "dist"

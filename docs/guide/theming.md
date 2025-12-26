@@ -1,6 +1,8 @@
 # Theming
 
-Peacock UI features a unique "Plumage Engine" implemented as a Tailwind CSS plugin. This engine provides the core utilities for the glassmorphism, motion, and texture effects.
+Peacock UI features a powerful "Plumage Engine" that allows for both light/dark modes and distinct color schemes.
+
+<ThemeDemo />
 
 ## Setup
 
@@ -18,56 +20,57 @@ export default {
 }
 ```
 
+## Schemes (New in v3)
+
+Peacock UI now supports multiple color schemes. You can switch between them using the `PeacockProvider` or by setting the `data-theme` attribute manually.
+
+### Available Schemes
+
+1.  **Quantum** (Default)
+    -   Primary: `#5865F2` (Blurple)
+    -   Vibe: Discord-like, Gaming, Modern
+2.  **Nebula**
+    -   Primary: `#d946ef` (Fuchsia)
+    -   Vibe: Cyberpunk, Synthwave, Retro
+3.  **Aurora**
+    -   Primary: `#06b6d4` (Cyan)
+    -   Vibe: Nature, Clean, Fresh
+
+## Usage
+
+Use the `PeacockProvider` to set the scheme globally:
+
+```tsx
+<PeacockProvider theme="dark" scheme="nebula">
+  {/* App */}
+</PeacockProvider>
+```
+
+Or apply it to specific sections using the `data-theme` attribute:
+
+```tsx
+<div data-theme="aurora">
+  <PeacockButton>Aurora Button</PeacockButton>
+</div>
+```
+
 ## Core Utilities
 
 ### Glassmorphism
 
-- `.plumage-glass`: The standard glass effect.
-  - Background: `rgba(255, 255, 255, 0.03)`
-  - Blur: `12px`
-  - Border: `1px solid rgba(255, 255, 255, 0.08)`
-
-- `.plumage-glass-heavy`: A deeper, darker glass for modals and overlays.
-  - Background: `rgba(15, 15, 18, 0.8)`
-  - Blur: `20px`
+-   `.plumage-glass`: The standard glass effect.
+-   `.plumage-glass-heavy`: A deeper, darker glass for modals and overlays.
 
 ### Texture
 
-- `.noise-texture`: Adds a subtle svg noise overlay to any element. This is crucial for the "high-fidelity" tactile feel.
+-   `.noise-texture`: Adds a subtle svg noise overlay to any element. This is crucial for the "high-fidelity" tactile feel.
 
-### Perspective System
+### Colors
 
-Added in v3.0.0-alpha.2 to support 3D holographic effects:
+The theme extends the Tailwind color palette with semantic names that adapt to the active scheme:
 
-- `.perspective-none`: `perspective: none`
-- `.perspective-500`: `perspective: 500px`
-- `.perspective-1000`: `perspective: 1000px`
-
-### Glows
-
-- `.text-glow`: Adds a text-shadow matching the primary color.
-- `.plumage-gradient`: An animated multi-color gradient background (Discord Blue -> Green -> Rose).
-
-## Colors
-
-The theme extends the Tailwind color palette with semantic names:
-
-- `peacock.primary`: #5865F2 (Discord Blue)
-- `peacock.success`: #23a559
-- `peacock.danger`: #f43f5e
-- `peacock.dark`: #0f0f12 (Background)
-- `peacock.surface.1`: #16161a (Card backgrounds)
-- `peacock.surface.2`: #1c1c21
-- `peacock.surface.3`: #25252b
-
-## Dark Mode
-
-Peacock UI is "Dark Mode First". While it supports light mode, the aesthetics are optimized for dark interfaces.
-
-To toggle modes, use the `PeacockProvider`:
-
-```tsx
-<PeacockProvider theme="dark">
-  {/* App */}
-</PeacockProvider>
-```
+-   `peacock.primary`: The main brand color (dynamic).
+-   `peacock.success`: Success state (dynamic).
+-   `peacock.danger`: Error state (dynamic).
+-   `peacock.dark`: #0f0f12 (Background)
+-   `peacock.surface.1`: #16161a (Card backgrounds)

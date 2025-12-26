@@ -35,6 +35,9 @@ import { InputDemo } from '../../demos/InputDemo'
 import { SkeletonDemo } from '../../demos/SkeletonDemo'
 import { CodeDemo } from '../../demos/CodeDemo'
 import { TabsDemo } from '../../demos/TabsDemo'
+import { DropdownMenuDemo } from '../../demos/DropdownMenuDemo'
+import { AccordionDemo } from '../../demos/AccordionDemo'
+import { ThemeDemo } from '../../demos/ThemeDemo'
 import { ComponentPreview } from '../../demos/ComponentPreview'
 import { HeroDemos } from '../../demos/HeroDemos'
 import { Credits } from '../../demos/Credits'
@@ -74,6 +77,9 @@ export default {
     app.component('SkeletonDemo', wrapReact(SkeletonDemo))
     app.component('CodeDemo', wrapReact(CodeDemo))
     app.component('TabsDemo', wrapReact(TabsDemo))
+    app.component('DropdownMenuDemo', wrapReact(DropdownMenuDemo))
+    app.component('AccordionDemo', wrapReact(AccordionDemo))
+    app.component('ThemeDemo', wrapReact(ThemeDemo))
     app.component('ComponentPreview', wrapReact(ComponentPreview))
     app.component('HeroDemos', wrapReact(HeroDemos))
     app.component('Credits', wrapReact(Credits))

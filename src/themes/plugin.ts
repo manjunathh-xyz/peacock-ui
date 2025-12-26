@@ -52,9 +52,9 @@ export const plumagePlugin = plugin(function({ addUtilities, theme }) {
     extend: {
       colors: {
         peacock: {
-          primary: '#5865F2', // Discord Blue
-          success: '#23a559', // Discord Green
-          danger: '#f43f5e',  // Rose 500
+          primary: 'rgb(var(--peacock-primary) / <alpha-value>)',
+          success: 'rgb(var(--peacock-success) / <alpha-value>)',
+          danger: 'rgb(var(--peacock-danger) / <alpha-value>)',
           dark: '#0f0f12',    // Deep charcoal
           darker: '#050505',
           surface: {

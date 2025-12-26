@@ -4,9 +4,22 @@
 
 @layer base {
   :root {
-    --peacock-primary: 88 101 242;
-    --peacock-success: 35 165 89;
-    --peacock-danger: 244 63 94;
+    /* Base (Quantum) */
+    --peacock-primary: 88 101 242; /* #5865F2 */
+    --peacock-success: 35 165 89;  /* #23a559 */
+    --peacock-danger: 244 63 94;   /* #f43f5e */
+  }
+
+  [data-theme='nebula'] {
+    --peacock-primary: 217 70 239; /* #d946ef Fuchsia 500 */
+    --peacock-success: 34 197 94;  /* #22c55e Green 500 */
+    --peacock-danger: 239 68 68;   /* #ef4444 Red 500 */
+  }
+
+  [data-theme='aurora'] {
+    --peacock-primary: 6 182 212;  /* #06b6d4 Cyan 500 */
+    --peacock-success: 16 185 129; /* #10b981 Emerald 500 */
+    --peacock-danger: 244 63 94;   /* #f43f5e Rose 500 */
   }
 
   .dark {

@@ -17,6 +17,8 @@ export * from './components/PeacockTabs';
 // v3 Components
 export * from './components/HolographicCard';
 export * from './components/PeacockDock';
+export * from './components/navigation/PeacockDropdownMenu';
+export * from './components/layout/PeacockAccordion';
 export * from './components/inputs/PeacockSlider';
 export * from './components/data-display/PeacockAvatar';
 export * from './components/data-display/PeacockCode';

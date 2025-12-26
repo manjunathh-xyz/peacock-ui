@@ -15,7 +15,7 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/guide/introduction' },
       { text: 'Components', link: '/components/button' },
-      { text: 'v3.0.0-alpha.3', items: [
+      { text: 'v3.0.0-alpha.4', items: [
         { text: 'Changelog', link: '/guide/changelog' },
         { text: 'Contributing', link: 'https://github.com/sploov/peacock-ui/blob/main/CONTRIBUTING.md' }
       ]}
@@ -43,6 +43,8 @@ export default defineConfig({
         items: [
           { text: 'Button', link: '/components/button' },
           { text: 'Tabs', link: '/components/tabs' },
+          { text: 'Accordion', link: '/components/accordion' },
+          { text: 'Dropdown Menu', link: '/components/dropdown-menu' },
           { text: 'Input', link: '/components/input' },
           { text: 'Switch', link: '/components/switch' },
           { text: 'Fluid Card', link: '/components/card' },

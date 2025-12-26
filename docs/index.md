@@ -72,12 +72,12 @@ features:
     <div class="plumage-glass rounded-[2.5rem] p-10 border border-white/10 space-y-6 group hover:border-peacock-primary/40 transition-all duration-500 relative overflow-hidden noise-texture">
       <div class="absolute -right-12 -top-12 w-48 h-48 bg-peacock-primary/10 blur-[80px] rounded-full pointer-events-none group-hover:bg-peacock-primary/20 transition-all"></div>
       <div class="flex items-center gap-4 relative z-10">
-        <span class="px-4 py-1.5 rounded-xl bg-peacock-primary text-white text-xs font-black uppercase tracking-[0.2em]">v3.0.0-alpha.3</span>
+        <span class="px-4 py-1.5 rounded-xl bg-peacock-primary text-white text-xs font-black uppercase tracking-[0.2em]">v3.0.0-alpha.4</span>
         <span class="text-white/20 text-xs font-bold font-mono">DEC 26, 2025</span>
       </div>
       <div class="relative z-10">
-        <h4 class="text-3xl font-black text-white mb-4">The Component Overhaul</h4>
-        <p class="text-white/50 text-lg leading-relaxed max-w-3xl">Introduced the PeacockTabs system, advanced documentation previews, and localized coordinate fixes for Quantum components. Bridging the gap between Vue and React with sub-millisecond precision.</p>
+        <h4 class="text-3xl font-black text-white mb-4">The Theming Engine</h4>
+        <p class="text-white/50 text-lg leading-relaxed max-w-3xl">Introduced a dynamic theming system with 3 presets (Quantum, Nebula, Aurora). Added the robust DropdownMenu and Accordion components to the core library.</p>
       </div>
     </div>
   </div>

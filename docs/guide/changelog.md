@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0-alpha.4] - 2025-12-26
+
+### Added
+- **Dynamic Theming Engine**: Support for multiple color schemes (`Quantum`, `Nebula`, `Aurora`) via CSS variables.
+- **PeacockAccordion**: A motion-first accordion component with `glass`, `outline`, and `ghost` variants.
+- **PeacockDropdownMenu**: A high-fidelity, glassmorphic dropdown system built on Radix UI primitives.
+- Added `scheme` prop to `PeacockProvider` for global theme switching.
+
+### Changed
+- Migrated core color system to CSS variables to support runtime theming.
+- Updated documentation with interactive theme switcher demo.
+
 ## [3.0.0-alpha.3] - 2025-12-26
 
 ### Added
