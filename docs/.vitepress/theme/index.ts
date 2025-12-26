@@ -37,6 +37,7 @@ import { CodeDemo } from '../../demos/CodeDemo'
 import { TabsDemo } from '../../demos/TabsDemo'
 import { ComponentPreview } from '../../demos/ComponentPreview'
 import { HeroDemos } from '../../demos/HeroDemos'
+import { Credits } from '../../demos/Credits'
 
 export default {
   extends: DefaultTheme,
@@ -75,5 +76,6 @@ export default {
     app.component('TabsDemo', wrapReact(TabsDemo))
     app.component('ComponentPreview', wrapReact(ComponentPreview))
     app.component('HeroDemos', wrapReact(HeroDemos))
+    app.component('Credits', wrapReact(Credits))
   }
 }

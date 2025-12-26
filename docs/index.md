@@ -83,47 +83,7 @@ features:
   </div>
 </section>
 
-<section id="credits" class="space-y-16">
-  <h2 class="text-5xl font-black text-white tracking-tight text-center">Engineered with Precision</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <!-- Core Technologies Card -->
-    <div class="space-y-8 p-10 rounded-[3rem] bg-white/[0.02] border border-white/5 relative group overflow-hidden noise-texture transition-all duration-500 hover:border-peacock-primary/20">
-      <div class="absolute inset-0 bg-gradient-to-br from-peacock-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-      <div class="text-4xl relative z-10 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">💻</div>
-      <div class="space-y-4 relative z-10">
-        <h4 class="text-2xl font-black text-white">Core Technologies</h4>
-        <p class="text-white/40 leading-relaxed">Built on a foundation of industry-leading open source tools designed for performance and scale.</p>
-        <div class="flex flex-wrap gap-2 pt-4 text-xs font-bold">
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-primary hover:bg-peacock-primary/10 hover:border-peacock-primary/30 transition-all cursor-default uppercase tracking-wider">React 19</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-primary hover:bg-peacock-primary/10 hover:border-peacock-primary/30 transition-all cursor-default uppercase tracking-wider">Framer Motion 12</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-primary hover:bg-peacock-primary/10 hover:border-peacock-primary/30 transition-all cursor-default uppercase tracking-wider">Three.js</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-primary hover:bg-peacock-primary/10 hover:border-peacock-primary/30 transition-all cursor-default uppercase tracking-wider">Tailwind CSS</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-primary hover:bg-peacock-primary/10 hover:border-peacock-primary/30 transition-all cursor-default uppercase tracking-wider">Vite</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-primary hover:bg-peacock-primary/10 hover:border-peacock-primary/30 transition-all cursor-default uppercase tracking-wider">Lucide Icons</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Design Inspiration Card -->
-    <div class="space-y-8 p-10 rounded-[3rem] bg-white/[0.02] border border-white/5 relative group overflow-hidden noise-texture transition-all duration-500 hover:border-peacock-success/20">
-      <div class="absolute inset-0 bg-gradient-to-br from-peacock-success/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-      <div class="text-4xl relative z-10 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3">🎨</div>
-      <div class="space-y-4 relative z-10">
-        <h4 class="text-2xl font-black text-white">Design Inspiration</h4>
-        <p class="text-white/40 leading-relaxed">Inspired by the most refined digital experiences in the productivity and gaming space.</p>
-        <div class="flex flex-wrap gap-2 pt-4 text-xs font-bold">
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-success hover:bg-peacock-success/10 hover:border-peacock-success/30 transition-all cursor-default uppercase tracking-wider">Discord</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-success hover:bg-peacock-success/10 hover:border-peacock-success/30 transition-all cursor-default uppercase tracking-wider">Linear</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-success hover:bg-peacock-success/10 hover:border-peacock-success/30 transition-all cursor-default uppercase tracking-wider">macOS</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-success hover:bg-peacock-success/10 hover:border-peacock-success/30 transition-all cursor-default uppercase tracking-wider">Vercel</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-success hover:bg-peacock-success/10 hover:border-peacock-success/30 transition-all cursor-default uppercase tracking-wider">Stripe</span>
-           <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-white/60 hover:text-peacock-success hover:bg-peacock-success/10 hover:border-peacock-success/30 transition-all cursor-default uppercase tracking-wider">Dynamic Island</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<Credits />
 
 <footer class="pt-40 pb-20 text-center relative overflow-hidden">
   <div class="absolute left-1/2 bottom-0 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
