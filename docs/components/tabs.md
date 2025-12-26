@@ -2,10 +2,6 @@
 
 A fluid, accessible tabs component with physics-based indicator movement.
 
-<script setup>
-import { TabsDemo } from '../demos/TabsDemo'
-</script>
-
 <TabsDemo />
 
 ## Usage
