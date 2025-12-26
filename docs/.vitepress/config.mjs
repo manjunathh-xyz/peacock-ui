@@ -15,7 +15,7 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/guide/introduction' },
       { text: 'Components', link: '/components/button' },
-      { text: 'v1.0.0', items: [
+      { text: 'v3.0.0', items: [
         { text: 'Changelog', link: 'https://github.com/sploov/peacock-ui/releases' },
         { text: 'Contributing', link: 'https://github.com/sploov/peacock-ui/blob/main/CONTRIBUTING.md' }
       ]}

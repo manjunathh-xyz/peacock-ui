@@ -51,7 +51,7 @@ export const PeacockDock = ({ items, className }: PeacockDockProps) => {
 
   return (
     <motion.div
-      onMouseMove={(e) => mouseX.set(e.pageX)}
+      onMouseMove={(e) => mouseX.set(e.clientX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         "flex h-16 items-end gap-4 rounded-3xl bg-black/40 border border-white/10 px-4 pb-3 plumage-glass-heavy",

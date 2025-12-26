@@ -27,6 +27,11 @@ export const plumagePlugin = plugin(function({ addUtilities, theme }) {
       'text-shadow': '0 0 20px rgba(var(--peacock-primary-rgb), 0.5)',
     },
     
+    // Perspective System
+    '.perspective-none': { 'perspective': 'none' },
+    '.perspective-500': { 'perspective': '500px' },
+    '.perspective-1000': { 'perspective': '1000px' },
+    
     // Texture System
     '.noise-texture': {
       'position': 'relative',
